@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Расписание </title>
+    <link rel="icon" type="image/x-icon" href="/image.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+    </div>
+    <div>
+    <div class="contbox">
+        <div class="cont">
+            <div class="verh">
+            <input autocomplete="off" type="text" maxlength="15" placeholder="название пары" id="namepara">
+
+            <select id="numberpara" name="student_courses" class="verh1">
+            <option value="1">1 пара</option>
+            <option value="2">2 пара</option>
+            <option value="3">3 пара</option>
+            <option value="4">4 пара</option>
+            <option value="5">5 пара</option>
+            </select>
+
+
+
+            <select id="daypara" name="student_courses" class="verh1">
+            <option value="понедельник">понедельник</option>
+            <option value="вторник">вторник</option>
+            <option value="среда">среда</option>
+            <option value="четверг">четверг</option>
+            <option value="пятница">пятница</option>
+            <option value="суббота">суббота</option>
+            </select>
+            </div>
+            <center><p style="font-size: 2vh;font-family:'Times New Roman', Times, serif">введите недели как в расписании</p></center>
+            <div class="niz">
+            <input autocomplete="off" type="text" placeholder="25-32,34,35,37-39" id="numbernedel">
+            <button id="lock" class="button-28">закрепить пару</button>
+            </div>
+
+        </div>
+    </div>
+    <div class="itog">
+        <div style="display: inline-flex;justify-content: space-between;" class="copy"><h1>скопируйте</h1><div style="width: 30vh; display: flex; justify-content: space-between;">
+            <button id="del" class="button-27">стереть</button><button id="copy" class="button-27">копировать</button>
+        </div></div>
+        <div id="tel">
+
+        </div>
+    </div>
+    </div>
+    <script src="index.js" ></script>
+</body>
+</html>
