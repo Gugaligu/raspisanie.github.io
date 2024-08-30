@@ -3,8 +3,6 @@ let html = ``;
 let copy=document.getElementById("copy");
 let del=document.getElementById("del");
 let send=document.getElementById("send");
-let tg=window.Telegram.WebApp;
-tg.expand()
 
 let lock = document.getElementById("lock");
 lock.onclick = function () {
@@ -32,10 +30,6 @@ copy.onclick=function(){
 del.onclick=function(){
     tel.innerHTML=``;
     console.log("удалил");
-}
-send.onclick=function(){
-    tg.sendData(tel.innerText)
-    tg.close()
 }
 
 
