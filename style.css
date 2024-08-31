@@ -52,8 +52,8 @@ input{
   background: rgba(255, 255, 255, 0.2);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(50%);
+  -webkit-backdrop-filter: blur(50%);
   border: 1px solid rgba(255, 255, 255, 0.3);
   transform-style: preserve-3d;
   transform: rotateX(4deg) rotateY(4deg);
@@ -223,7 +223,7 @@ option{
   justify-content: center;
   align-items: center;
 }
-@media (min-width: 1px) and (max-width: 430px) {
+@media (min-width: 1px) and (max-width: 450px) {
   .vse{
     width: 100%;
   }
@@ -232,6 +232,7 @@ option{
   }
   .cont{
     width: 100%;
+    border: 0px solid rgba(255, 255, 255, 0.3);
   }
   .copy{
     width: 90%;
@@ -252,9 +253,16 @@ option{
     width: 12vh;
   }
   .itog{
+    overflow: hidden;
     width: 100%;
     padding: 0px;
-    border-right: 0px solid rgba(43, 43, 43, 0.568);
-    border-left: 0px solid rgba(43, 43, 43, 0.568);
+    border: 0px solid rgba(255, 255, 255, 0.3);
+  }
+}
+@media (min-width: 1px) and (max-width: 450px) {
+  .button-27{
+    font-size:1.7vh ;
+    height: 6vh;
+    width: 12vh;
   }
 }
