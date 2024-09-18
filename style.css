@@ -3,43 +3,9 @@ body {
   height: 100%;
   display: flexbox;
   justify-content: center;
-  background-size: 300% 300%;
-  background-image: radial-gradient(circle, rgba(6, 1, 105, 1) 0%, rgba(58, 26, 111, 1) 35%, rgba(12, 12, 101, 1) 55%, rgba(85, 36, 68, 1) 68%, rgba(3, 161, 193, 1) 100%);
-  -webkit-animation: AnimateBG 15s ease infinite;
-  animation: AnimateBG 15s ease infinite;
-  color: #d6d6d6;
-  font-family: cursive;
-  margin: 0;
-  -webkit-tap-highlight-color: transparent;
-}
-
-@-webkit-keyframes AnimateBG {
-  0% {
-    background-position: 0% 50%;
-  }
-
-  50% {
-    background-position: 100% 50%;
-  }
-
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-@keyframes AnimateBG {
-  0% {
-    background-position: 0% 50%;
-  }
-
-  50% {
-    background-position: 100% 50%;
-  }
-
-  100% {
-    background-position: 0% 50%;
-  }
-
+  background-size: 100% 100%;
+  background: rgb(148, 160, 165);
+  margin: 0px;
 }
 
 input {
@@ -58,8 +24,6 @@ input {
   background: rgba(255, 255, 255, 0.2);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(50%);
-  -webkit-backdrop-filter: blur(50%);
   border: 1px solid rgba(255, 255, 255, 0.3);
   transform-style: preserve-3d;
   transform: rotateX(4deg) rotateY(4deg);
@@ -112,7 +76,7 @@ input {
   height: 5vh;
   border-radius: 15px;
   border: 1px solid rgba(43, 43, 43, 0.568);
-  color: #ffebc7;
+  color: #313131;
 }
 
 .itog {
@@ -120,8 +84,6 @@ input {
   background: rgba(255, 255, 255, 0.2);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
   border: 1px solid rgba(255, 255, 255, 0.3);
   transform-style: preserve-3d;
   transform: rotateX(4deg) rotateY(4deg);
@@ -141,11 +103,11 @@ input {
 }
 
 option {
-  background: rgba(0, 0, 0, 0.623);
+  background: rgba(143, 143, 143, 0.623);
 }
 
 ::-webkit-input-placeholder {
-  color: #ffebc79a;
+  color: #444444;
   font-family: cursive;
 }
 
@@ -163,7 +125,7 @@ option {
 .button-27 {
   appearance: none;
   background-color: #00000070;
-  border: 2px solid #30303070;
+  border: 2px solid #53535370;
   border-radius: 15px;
   box-sizing: border-box;
   color: #FFFFFF;
@@ -202,7 +164,7 @@ option {
 .button-28 {
   appearance: none;
   background-color: #00000070;
-  border: 2px solid #2e2e2e70;
+  border: 2px solid #46464670;
   border-radius: 15px;
   box-sizing: border-box;
   color: #FFFFFF;
