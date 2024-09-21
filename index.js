@@ -29,8 +29,8 @@ function lod() {
         console.log("луна")
         col_button.innerHTML = `<img src="moon.png" style="height: 3vh;">`
         document.querySelector(`.color_nastr`).style.cssText = `background-color: #313131;border: #fff1d7;`
-        document.getElementById("col").style.cssText=`border: 1px solid rgb(255, 255, 255);
-    box-shadow: 50px 50px 30px rgba(0, 0, 0, 0.24);`
+        document.getElementById("col").style.cssText=`border: 1px solid rgb(200, 200, 200);
+    box-shadow: 50px 50px 30px rgba(0, 0, 0, 0.24);background-color: #ffffff52;`
     }
     if (localStorage.getItem(`light`) === null) {
         localStorage.setItem(`light`, `<img src="sun.png" style="height: 3vh;">`)
@@ -41,7 +41,7 @@ col_button.onclick = function () {
     if (col_button.innerHTML.includes("sun")) {
         localStorage.setItem(`light`, `<img src="moon.png" style="height: 3vh;">`)
         col_button.innerHTML = `<img src="moon.png" style="height: 3vh;">`
-        document.getElementById("col").style.cssText=`border: 1px solid rgb(255, 255, 255);box-shadow: 50px 50px 30px rgba(0, 0, 0, 0.24);`
+        document.getElementById("col").style.cssText=`border: 1px solid rgb(200, 200, 200);box-shadow: 50px 50px 30px rgba(0, 0, 0, 0.24);background-color: #ffffff52;`
         document.querySelector(`.color_nastr`).style.cssText = `background: #313131;border: #fff1d7;`
     } else {
         localStorage.setItem(`light`, `<img src="sun.png" style="height: 3vh;">`)
