@@ -6,13 +6,45 @@ let send = document.getElementById("send");
 let numberpara = document.getElementById("numberpara");
 let day = document.getElementById("daypara")
 let lock = document.getElementById("lock");
-
-
+let col_button = document.getElementById("col")
 var viewport = document.querySelector("meta[name=viewport]");
 viewport.setAttribute("content", viewport.content + ", height=" + window.innerHeight);
 
 
 
+let color_back = ``
+color_back = localStorage.getItem(`light`)
+window.onload = lod;
+console.log(localStorage.getItem(`light`))
+col_button.innerHTML = color_back
+function lod() {
+    if (col_button.innerHTML.includes("/sun")) {
+        console.log("солнышко")
+        col_button.innerHTML = `<img src="/sun.png" style="height: 3vh;">`
+        document.querySelector(`.color_nastr`).style.cssText = `background: rgb(199, 199, 199);border: #fff1d7;`
+    }
+    if (col_button.innerHTML.includes("/moon")) {
+        console.log("луна")
+        col_button.innerHTML = `<img src="/moon.png" style="height: 3vh;">`
+        document.querySelector(`.color_nastr`).style.cssText = `background-color: #313131;border: #fff1d7;`
+    }
+    if (localStorage.getItem(`light`) === null) {
+        localStorage.setItem(`light`, `<img src="/sun.png" style="height: 3vh;">`)
+    }
+}
+col_button.onclick = function () {
+    let col_button = document.getElementById("col")
+    if (col_button.innerHTML.includes("/sun")) {
+        localStorage.setItem(`light`, `<img src="/moon.png" style="height: 3vh;">`)
+        col_button.innerHTML = `<img src="/moon.png" style="height: 3vh;">`
+        document.querySelector(`.color_nastr`).style.cssText = `background: #313131;border: #fff1d7;`
+    } else {
+        localStorage.setItem(`light`, `<img src="/sun.png" style="height: 3vh;">`)
+        col_button.innerHTML = `<img src="/sun.png" style="height: 3vh;">`
+        document.querySelector(`.color_nastr`).style.cssText = `background-color: rgb(199, 199, 199);border: #fff1d7;`
+    }
+    console.log(localStorage.getItem("light"))
+}
 
 
 lock.onclick = function () {

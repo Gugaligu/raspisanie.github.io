@@ -7,13 +7,17 @@
     <title>Расписание </title>
     <link rel="icon" type="image/x-icon" href="image.png">
     <link rel="stylesheet" href="style.css">
+    <link rel="preload" href="/sun.png" as="image">
+    <link rel="preload" href="/moon.png" as="image">
 </head>
 
 
-<body>
+<body class="color_nastr">
     <div class="vse">
+    <div class="nastr">
+        <div class="sun"><button id="col"></button></div>
     <div class="contbox">
-        <div class="cont">
+        <div class="cont color_nastr">
             <center><p style="font-size: 2vh;margin:3px;padding-bottom:10px;border-bottom: 2px solid rgba(43, 43, 43, 0.568);">введите недели как в расписании.<br>Чтобы удалить пару, не вводите название.</p></center>
             <div class="verh">
             <input autocomplete="off" type="text" maxlength="15" placeholder="название пары" id="namepara">
@@ -54,6 +58,7 @@
         <div id="tel">
 
         </div>
+    </div>
     </div>
     </div>
     <script src="index.js" ></script>

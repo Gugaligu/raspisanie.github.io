@@ -7,13 +7,31 @@ body {
   background: rgb(199, 199, 199);
   margin: 0px;
 }
+.sun button{
+  border-radius: 30px;
+  border: 0px;
+  background-color: #00000000;
+}
+.sun button:active{
+  background-color: #00000059;
+}
+
+.nastr{
+    padding: 10px;
+    padding-top: 15px;
+    margin-top: 10vh;
+    background-color: #ffffff52;
+    border-radius: 30px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 50px 50px 30px rgba(0, 0, 0, 0.24);
+}
 
 input {
   color: #FFFFFF;
 }
 
 .contbox {
-  margin-top: 10vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -21,12 +39,10 @@ input {
 
 .cont {
   font-size: 1.5vh;
-  background: rgba(255, 255, 255, 0.2);
+  background-color: #ffffff52;
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.3);
-  transform-style: preserve-3d;
-  transform: rotateX(4deg) rotateY(4deg);
   box-shadow: 50px 50px 30px rgba(0, 0, 0, 0.24);
   padding: 10px;
   width: 50vh;
@@ -81,12 +97,10 @@ input {
 
 .itog {
   font-size: 1.5vh;
-  background: rgba(255, 255, 255, 0.2);
+  background-color: #ffffff52;
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.3);
-  transform-style: preserve-3d;
-  transform: rotateX(4deg) rotateY(4deg);
   box-shadow: 50px 50px 30px rgba(0, 0, 0, 0.24);
   padding: 10px;
   width: 50vh;
@@ -145,7 +159,6 @@ option {
   -webkit-user-select: none;
   touch-action: manipulation;
   will-change: transform;
-  margin-right: 10px;
 }
 
 .button-27:disabled {
@@ -260,10 +273,22 @@ option {
   }
 }
 
+.dn{
+  background-color: #c52121;
+  width: 30px;
+
+}
+
 @media (min-width: 1px) and (max-width: 450px) {
   .button-27 {
     font-size: 1.7vh;
     height: 6vh;
     width: 12vh;
   }
+}
+
+.class_sun{
+  background-color: #313131;
+  color: #ff8e0c;
+  border: #fff1d7;
 }
