@@ -34,6 +34,7 @@ function lod() {
     }
     if (localStorage.getItem(`light`) === null) {
         localStorage.setItem(`light`, `<img src="sun.png" style="height: 3vh;">`)
+        col_button.innerHTML = `<img src="sun.png" style="height: 3vh;">`
     }
 }
 col_button.onclick = function () {
