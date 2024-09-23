@@ -12,7 +12,7 @@ viewport.setAttribute("content", viewport.content + ", height=" + window.innerHe
 
 
 
-let color_back = ``
+
 color_back = localStorage.getItem(`light`)
 window.onload = lod;
 console.log(localStorage.getItem(`light`))
